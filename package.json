@@ -1,0 +1,30 @@
+{
+  "name": "inventory-api",
+  "version": "1.0.0",
+  "description": "Backend APIs that connect to an Inventory Management and Ticketing Frontend in React",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomisin Ajakaiye",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-mongo-sanitize": "^2.0.0",
+    "helmet": "^4.0.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.27"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.4"
+  }
+}
