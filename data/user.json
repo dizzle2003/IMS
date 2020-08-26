@@ -1,0 +1,392 @@
+[
+
+  {
+    "first_name": "Admin",
+    "last_name": "One",
+    "email": "admin.one@covenantuniversity.edu.ng",
+    "password": "adminone",
+    "role": "admin"
+  },
+  {
+    "first_name": "Oluwatomisin",
+    "last_name": "Ajakaiye",
+    "email": "oluwatomisin.ajakaiye@covenantuniversity.edu.ng",
+    "password": "Tomi123",
+    "role": "admin"
+  },
+  {
+    "first_name": "Marie",
+    "last_name": "Greats",
+    "user": "Marie Greats",
+    "email": "marie.greats@covenantuniversity.edu.ng",
+    "password": "marie123",
+    "role": "admin"
+  },
+  {
+    "first_name": "Suzie",
+    "last_name": "Samuels",
+    "email": "suzie.samuels@covenantuniversity.edu.ng",
+    "password": "suzie123",
+    "role": "admin"
+  },
+  {
+    "first_name": "Dami",
+    "last_name": "Oshifowora",
+    "email": "dami.oshifowora@covenantuniversity.edu.ng",
+    "password": "dami123",
+    "role": "admin"
+  },
+  {
+    "first_name": "User",
+    "last_name": "One",
+    "email": "user.one@covenantuniversity.edu.ng",
+    "password": "userone",
+    "role": "user"
+  },
+  {
+    "first_name": "Tolulope",
+    "last_name": "Oladimeji",
+    "email": "tolulope.oladimeji@covenantuniversity.edu.ng",
+    "password": "password",
+    "role": "user"
+  },
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@covenantuniversity.edu.ng",
+    "password": "john123",
+    "role": "user"
+  },
+  {
+    "first_name": "Ciroma",
+    "last_name": "Chukwu",
+    "email": "ciroma.chukwu@covenantuniversity.edu.ng",
+    "password": "ciroma123",
+    "role": "user"
+  },
+  {
+    "first_name": "Temi",
+    "last_name": "Cole",
+    "email": "temi.cole@covenantuniversity.edu.ng",
+    "password": "temi123",
+    "role": "user"
+  },
+  {
+    "first_name": "Jibola",
+    "last_name": "James",
+    "email": "jibola.james@covenantuniversity.edu.ng",
+    "password": "jibola123",
+    "role": "user"
+  },
+  {
+    "first_name": "Chisom",
+    "last_name": "Agu",
+    "email": "chisom.agu@covenantuniversity.edu.ng",
+    "password": "chisom123",
+    "role": "user"
+  },
+  {
+    "first_name": "Tiwa",
+    "last_name": "Tope",
+    "email": "tiwa.tope@covenantuniversity.edu.ng",
+    "password": "tiwa123",
+    "role": "user"
+  },
+  {
+    "first_name": "Moji",
+    "last_name": "Abudu",
+    "email": "moji.abudu@covenantuniversity.edu.ng",
+    "password": "moji123",
+    "role": "user"
+  },
+  {
+    "first_name": "Faridah",
+    "last_name": "Ali",
+    "email": "faridah.ali@covenantuniversity.edu.ng",
+    "password": "faridah123",
+    "role": "user"
+  },
+  {
+    "first_name": "Derinsola",
+    "last_name": "Akin",
+    "email": "derinsola.akin@covenantuniversity.edu.ng",
+    "password": "derinsola123",
+    "role": "user"
+  },
+  {
+    "first_name": "Rose",
+    "last_name": "Abiodun",
+    "email": "rose.abiodun@covenantuniversity.edu.ng",
+    "password": "rose123",
+    "role": "user"
+  },
+  {
+    "first_name": "Fred",
+    "last_name": "Chukwuka",
+    "email": "fred.chukwuka@covenantuniversity.edu.ng",
+    "password": "fred123",
+    "role": "user"
+  },
+  {
+    "first_name": "Yvonne",
+    "last_name": "Okoro",
+    "email": "yvonne.okoro@covenantuniversity.edu.ng",
+    "password": "yvonne123",
+    "role": "user"
+  },
+  {
+    "first_name": "Yemi",
+    "last_name": "Jones",
+    "email": "yemi.jones@covenantuniversity.edu.ng",
+    "password": "yemi123",
+    "role": "user"
+  },
+  {
+    "first_name": "Niyola",
+    "last_name": "Awe",
+    "email": "niyola.awe@covenantuniversity.edu.ng",
+    "password": "niyola123",
+    "role": "user"
+  },
+  {
+    "first_name": "Shammah",
+    "last_name": "Ola",
+    "email": "shammah.ola@covenantuniversity.edu.ng",
+    "password": "shammah123",
+    "role": "user"
+  },
+  {
+    "first_name": "Greg",
+    "last_name": "Okoro",
+    "email": "greg.okoro@covenantuniversity.edu.ng",
+    "password": "greg123",
+    "role": "user"
+  },
+  {
+    "first_name": "Ameerah",
+    "last_name": "Ali",
+    "email": "ameerah.ali@covenantuniversity.edu.ng",
+    "password": "ameerah123",
+    "role": "user"
+  },
+  {
+    "first_name": "Latifah",
+    "last_name": "Musa",
+    "email": "latifah.musa@covenantuniversity.edu.ng",
+    "password": "latifah123",
+    "role": "user"
+  },
+  {
+    "first_name": "Queen",
+    "last_name": "Ibe",
+    "email": "queen.ibe@covenantuniversity.edu.ng",
+    "password": "queen123",
+    "role": "user"
+  },
+  {
+    "first_name": "Chioma",
+    "last_name": "Curtis",
+    "email": "chioma.curtis@covenantuniversity.edu.ng",
+    "password": "chioma123",
+    "role": "user"
+  },
+  {
+    "first_name": "Tega",
+    "last_name": "Ofogba",
+    "email": "tega.ofogba@covenantuniversity.edu.ng",
+    "password": "tega123",
+    "role": "user"
+  },
+  {
+    "first_name": "Oreoluwa",
+    "last_name": "Deji",
+    "email": "oreoluwa.deji@covenantuniversity.edu.ng",
+    "password": "oreoluwa123",
+    "role": "user"
+  },
+  {
+    "first_name": "Kofo",
+    "last_name": "Feyitan",
+    "email": "kofo.feyitan@covenantuniversity.edu.ng",
+    "password": "kofo123",
+    "role": "user"
+  },
+  {
+    "first_name": "Ivie",
+    "last_name": "Ani",
+    "email": "ivie.ani@covenantuniversity.edu.ng",
+    "password": "ivie123",
+    "role": "user"
+  },
+  {
+    "first_name": "Hannah",
+    "last_name": "Ibe",
+    "email": "hannah.ibe@covenantuniversity.edu.ng",
+    "password": "hannah123",
+    "role": "user"
+  },
+  {
+    "first_name": "Blossom",
+    "last_name": "Emma",
+    "email": "blossom.emma@covenantuniversity.edu.ng",
+    "password": "blossom123",
+    "role": "user"
+  },
+  {
+    "first_name": "John",
+    "last_name": "Akintan",
+
+    "email": "john.akintan@covenantuniversity.edu.ng",
+    "password": "john123",
+    "role": "user"
+  },
+  {
+    "first_name": "Prince",
+    "last_name": "Umunna",
+    "email": "prince.umunna@covenantuniversity.edu.ng",
+    "password": "prince123",
+    "role": "user"
+  },
+  {
+    "first_name": "Ikenna",
+    "last_name": "Umunna",
+    "email": "ikenna.umunna@covenantuniversity.edu.ng",
+    "password": "ikenna123",
+    "role": "user"
+  },
+  {
+    "first_name": "Kevwe",
+    "last_name": "Ofogba",
+    "email": "kevwe.ofogba@covenantuniversity.edu.ng",
+    "password": "kevwe123",
+    "role": "user"
+  },
+  {
+    "first_name": "Hauwa",
+    "last_name": "Musa",
+    "email": "hauwa.musa@covenantuniversity.edu.ng",
+    "password": "hauwa123",
+    "role": "user"
+  },
+  {
+    "first_name": "Iniobong",
+    "last_name": "Edet",
+    "email": "iniobong.edet@covenantuniversity.edu.ng",
+    "password": "iniobong123",
+    "role": "user"
+  },
+  {
+    "first_name": "Akpan",
+    "last_name": "Joshua",
+    "email": "akpan.joshua@covenantuniversity.edu.ng",
+    "password": "akpan123",
+    "role": "user"
+  },
+  {
+    "first_name": "Chiamaka",
+    "last_name": "Cole",
+    "email": "chiamaka.cole@covenantuniversity.edu.ng",
+    "password": "chiamaka123",
+    "role": "user"
+  },
+  {
+    "first_name": "Emmanuel",
+    "last_name": "Ike",
+    "email": "emmanuel.ike@covenantuniversity.edu.ng",
+    "password": "emmanuel123",
+    "role": "user"
+  },
+  {
+    "first_name": "William",
+    "last_name": "Peniel",
+    "email": "william.peniel@covenantuniversity.edu.ng",
+    "password": "william123",
+    "role": "user"
+  },
+  {
+    "first_name": "Kennedy",
+    "last_name": "John",
+    "email": "kennedy.john@covenantuniversity.edu.ng",
+    "password": "kennedy123",
+    "role": "user"
+  },
+  {
+    "first_name": "Amanda",
+    "last_name": "Agbara",
+    "email": "amanda.agbara@covenantuniversity.edu.ng",
+    "password": "amanda123",
+    "role": "user"
+  },
+  {
+    "first_name": "Zia",
+    "last_name": "Ali",
+    "email": "zia.ali@covenantuniversity.edu.ng",
+    "password": "zia123",
+    "role": "user"
+  },
+  {
+    "first_name": "Mercy",
+    "last_name": "Ibe",
+    "email": "mercy.ibe@covenantuniversity.edu.ng",
+    "password": "mercy123",
+    "role": "user"
+  },
+  {
+    "first_name": "Inioluwa",
+    "last_name": "Olaniran",
+    "email": "inioluwa.olaniran@covenantuniversity.edu.ng",
+    "password": "inioluwa123",
+    "role": "user"
+  },
+  {
+    "first_name": "Ifechukwu",
+    "last_name": "Nwabueze",
+    "user": "Ifechukwu Nwabueze",
+    "email": "ifechukwu.nwabueze@covenantuniversity.edu.ng",
+    "password": "ifechukwu123",
+    "role": "user"
+  },
+  {
+    "first_name": "Zeina",
+    "last_name": "Jammal",
+    "email": "zeina.jammal@covenantuniversity.edu.ng",
+    "password": "zeina123",
+    "role": "user"
+  },
+  {
+    "first_name": "Christabel",
+    "last_name": "Akpoguma",
+    "email": "christabel.akpoguma@covenantuniversity.edu.ng",
+    "password": "christabel123",
+    "role": "user"
+  },
+  {
+    "first_name": "Rina",
+    "last_name": "James",
+    "email": "rina.james@covenantuniversity.edu.ng",
+    "password": "rina123",
+    "role": "user"
+  },
+  {
+    "first_name": "Darrell",
+    "last_name": "Idiagbor",
+    "email": "darrell.idiagbor@covenantuniversity.edu.ng",
+    "password": "darrell123",
+    "role": "user"
+  },
+  {
+    "first_name": "Daisy",
+    "last_name": "Oke",
+    "email": "daisy.oke@covenantuniversity.edu.ng",
+    "password": "daisy123",
+    "role": "user"
+  },
+  {
+    "first_name": "Vera",
+    "last_name": "Chukwuma",
+    "user": "Vera Chukwuma",
+    "email": "vera.chukwuma@covenantuniversity.edu.ng",
+    "password": "vera123",
+    "role": "user"
+  }
+]

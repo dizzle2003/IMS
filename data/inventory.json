@@ -1,0 +1,663 @@
+[
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Chair",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "In Use",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "In Use",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "In Use",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Damaged",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Damaged",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Bed Frame",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Damaged",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "In Use",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Wood"
+  },
+  {
+    "item": "Table",
+    "state": "Available",
+    "material": "Metal"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "In Use",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "In Use",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Apartment",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "In Use",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Bungalow",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "In Use",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "In Use",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "4 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "In Use",
+    "material": "3 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "2 bedroom"
+  },
+  {
+    "item": "Duplex",
+    "state": "Available",
+    "material": "3 bedroom"
+  }
+]
