@@ -87,12 +87,18 @@ exports.getUsers = async (req, res) => {
 */
 
 exports.logout = async (req, res) => {
-  res.cookie('token', 'none', {
-    expires: new Date(Date.now() + 5 * 1000),
-    httpOnly: true
-  })
-  res.status(200).json({
-    success: true,
-    data: {}
-  })
+  try {
+    res.cookie('token', 'none', {
+      expires: new Date(Date.now() + 5 * 1000),
+      httpOnly: true
+    })
+    res.status(200).json({
+      success: true,
+      data: {}
+    })
+  } catch (err) {
+    res.status(400).json({
+      err
+    })
+  }
 };

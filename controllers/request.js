@@ -10,13 +10,14 @@ const Inventory = require("../models/Inventory");
 */
 exports.getAllRequests = async (req, res) => {
   try {
-    const data = await Request.find();
+    const requests = await Request.find();
+    console.log(requests);
     res.status(200).json({
       success: true,
-      data,
+      data: requests,
     });
   } catch (err) {
-    res.status(404).json({
+    res.status(400).json({
       success: false,
       err,
     });
@@ -160,7 +161,7 @@ exports.updatePropertyStatus = async (req, res) => {
     res.status(302).json({
       updated: true,
       msg: `${property} with id ${id} has been updated`,
-      data: property,
+      data: property.state
     });
   } catch (err) {
     res.status(400).json({

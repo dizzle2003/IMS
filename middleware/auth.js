@@ -11,12 +11,12 @@ exports.protect = async (req, res, next) => {
   ) {
     token = req.headers.authorization.split(" ")[1];
   } 
-  else if (req.cookies.token) {
-    token = req.cookies.token;
-  }
+  // else if (req.cookies.token) {
+  //   token = req.cookies.token;
+  // }
 
   if (!token) {
-    return res.status(401).json({
+    return res.status(403).json({
       success: false,
       msg: "You are not authorized to access this route",
     });
@@ -26,14 +26,7 @@ exports.protect = async (req, res, next) => {
     //Verify if token exists
     var decoded = jwt.verify(token, process.env.JWT_SECRET);
     console.log(decoded);
-    
-    
-    
-    
     req.user = await User.findById(decoded.id);
-    
-    
-    
     next()
   } catch (error) {
     return res.status(403).json({
@@ -45,17 +38,14 @@ exports.protect = async (req, res, next) => {
 
 //Grant authorization access to specific roles
 exports.authorize = (...roles) => {
-    // @ts-ignore
-    return (req, res, next) => {
-      console.log(req.user.role)
-        if(!roles.includes(req.user.role)){
-          console.log(req.user.role)
-          return res.status(403).json({
-            success: false,
-            msg: `You have the ${req.user.role} priviledge which has no access to this page. Please consult administrator`
-          })
-        }
-        next();
-    }
-
+  console.log(...roles)
+   return (req, res, next) => {
+     console.log(req.user)
+     if(!roles.includes(req.user.role)){
+       return res.status(403).json({
+         msg: `user role ${req.user.role} is unauthorized to access this route`
+       })
+     }
+     next()
+   }
 }
