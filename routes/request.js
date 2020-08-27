@@ -11,6 +11,6 @@ router.route("/")
   .get(protect, authorize("admin"), getAllRequests)
   .post(protect, createReplacementRequest);
 
-router.post("/createrequest", authorize, createRequest);
+router.post("/createrequest", protect, authorize("user"), createRequest);
 
 module.exports = router;

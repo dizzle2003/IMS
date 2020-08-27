@@ -51,22 +51,22 @@ exports.createRequest = async (req, res) => {
 @route = POST '/api/requests'
 @access = protected (logged in user only)
 */
-exports.createPropertyRequest = async (req, res) => {
-  //Add User to req.body
-  req.body.user = req.user.id;
-  try {
-    const userRequest = await Request.create(req.body);
-    res.json(201).json({
-      success: true,
-      data: userRequest,
-    });
-  } catch (err) {
-    res.json(400).json({
-      success: false,
-      err,
-    });
-  }
-};
+// exports.createPropertyRequest = async (req, res) => {
+//   //Add User to req.body
+//   req.body.user = req.user.id;
+//   try {
+//     const userRequest = await Request.create(req.body);
+//     res.json(201).json({
+//       success: true,
+//       data: userRequest,
+//     });
+//   } catch (err) {
+//     res.json(400).json({
+//       success: false,
+//       err,
+//     });
+//   }
+// };
 
 /*
 @desc = Creates a replacement request by the user in the database
