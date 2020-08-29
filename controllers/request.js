@@ -11,7 +11,6 @@ const Inventory = require("../models/Inventory");
 exports.getAllRequests = async (req, res) => {
   try {
     const requests = await Request.find();
-    console.log(requests);
     res.status(200).json({
       success: true,
       data: requests,
@@ -31,7 +30,7 @@ exports.getAllRequests = async (req, res) => {
 */
 exports.createRequest = async (req, res) => {
   //Add User to req.body
-  req.body.user = req.user.id;
+  req.body.user = req.user;
   try {
     const userRequest = await Request.create(req.body);
     res.json(201).json({
@@ -110,7 +109,7 @@ exports.createReplacementRequest = async (req, res) => {
 
   try {
     //Add User to req.body
-    req.body.user = req.user.id;
+    req.body.user = req.user;
     req.body.file = req.files.file;
     const userRequest = await Request.create(req.body);
     res.json(201).json({
@@ -126,24 +125,6 @@ exports.createReplacementRequest = async (req, res) => {
 };
 
 /*
-@desc = Retrieves a request by the user in the database
-@route = PATCH '/api/requests'
-@access = protected (logged in user only)
-*/
-// exports.getRequestByUser = async (req, res) => {
-//   try {
-//     const userRequest = await Request.findOne({ user: req.user.id }).where(status).equals('closed');
-//     res.json(200).json({
-//       success: true,
-//       data: userRequest,
-//     });
-//   } catch (err) {
-//     res.json(400).json({
-//       success: false,
-//       err,
-//     });
-//   }
-// };
 
 /*
 @desc = Updates a request by the user in the database
@@ -152,6 +133,7 @@ exports.createReplacementRequest = async (req, res) => {
 */
 exports.updatePropertyStatus = async (req, res) => {
   const { id } = req.params;
+  req.body.user = req.user
   try {
     const property = Inventory.findByIdAndUpdate(id, req.body, {
       new: true,
@@ -161,7 +143,7 @@ exports.updatePropertyStatus = async (req, res) => {
     res.status(302).json({
       updated: true,
       msg: `${property} with id ${id} has been updated`,
-      data: property.state
+      data: property
     });
   } catch (err) {
     res.status(400).json({

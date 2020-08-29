@@ -4,13 +4,21 @@ const { protect, authorize } = require("../middleware/auth");
 const {
   getAllRequests,
   createReplacementRequest,
-  createRequest
+  createRequest,
+  updatePropertyStatus,
 } = require("../controllers/request");
 
-router.route("/")
+router
+  .route("/")
   .get(protect, authorize("admin"), getAllRequests)
-  .post(protect, createReplacementRequest);
+  .put(protect, authorize("user"), updatePropertyStatus);
 
 router.post("/createrequest", protect, authorize("user"), createRequest);
+router.post(
+  "/createreplacementrequest",
+  protect,
+  authorize("user"),
+  createReplacementRequest
+);
 
 module.exports = router;
