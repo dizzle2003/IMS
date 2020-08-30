@@ -52,7 +52,7 @@ router
    *      content:
    *        application/json:
    *          schema:
-   *            $ref: '../models/Inventory'
+   *            $ref: '#/models/Inventory'
    *          example:
    *            item: 'Chair'
    *            state: 'Available'
@@ -79,7 +79,7 @@ router
    *        content:
    *          application/json:
    *            schema:
-   *              $ref: '../models/Inventory'
+   *              $ref: '#/models/Inventory'
    *            example:
    *              status: 'closed'
    *      access: admin only
@@ -112,7 +112,7 @@ router
    *        content:
    *          application/json:
    *            schema:
-   *              $ref: '../models/Inventory'
+   *              $ref: '#/models/Inventory'
    *            example:
    *              id: 5f30948610064f4a000b7139
    *      access: admin only

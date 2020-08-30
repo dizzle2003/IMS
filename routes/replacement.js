@@ -12,7 +12,7 @@ router
   /**
    * @swagger
    * paths:
-   *  /api/request:
+   *  /api/replacement:
    *  get:
    *    description: This retrieves all replacement request objects from the database
    *    access: admin only

@@ -12,7 +12,7 @@ router
   .route("/")
    /**
    * @swagger
-   * /api/inventory:
+   * /api/property:
    *  get:
    *    description: This retrieves all properties from the database
    *    access: admin only
