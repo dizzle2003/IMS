@@ -14,7 +14,7 @@ router
    * @swagger
    * /api/property:
    *  get:
-   *    description: This retrieves all properties from the database
+   *    summary: This retrieves all properties from the database
    *    access: admin only
    *    responses:
    *      '200':

@@ -8,7 +8,7 @@ router.route('/')
    * @swagger
    * /api/users:
    *  get:
-   *    description: This retrieves all users from the database
+   *    summary: This retrieves all users from the database
    *    access: admin only
    *    responses:
    *      '200':
@@ -72,7 +72,7 @@ router.route('/')
    * paths:
    *  /api/users/logout:
    *    get:
-   *      description: This logs out all users and deletes the cookies
+   *      summary: This logs out all users and deletes the cookies
    *      access: logged in user or admin
    *      responses:
    *        '200':

@@ -55,8 +55,8 @@ router
    * @swagger
    * paths:
    *  /api/request:
-   *  get:
-   *    description: This retrieves all requests from the database
+   *    get:
+   *      summary: This retrieves all requests from the database
    *    access: admin only
    *    responses:
    *      '200':

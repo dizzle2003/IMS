@@ -15,7 +15,7 @@ router
    * paths:
    *  /api/inventory:
    *    get:
-   *      description: This retrieves all inventory from the database
+   *      summary: This retrieves all inventory from the database
    *      access: admin only
    *      responses:
    *        '200':
@@ -103,8 +103,8 @@ router
   /**
    * @swagger
    * paths:
-   *  /api/replacement:
-   *    put:
+   *  /api/inventory:
+   *    delete:
    *      summary: This allows an admin to delete an inventory item
    *      requestBody:
    *        description: JSON body to be passed to the endpoint

@@ -9,30 +9,35 @@ const {
 
 router
   .route("/")
-  /**
+ /**
    * @swagger
    * paths:
    *  /api/replacement:
-   *  get:
-   *    description: This retrieves all replacement request objects from the database
-   *    access: admin only
-   *    responses:
-   *      '200':
-   *        description: A successful response with all replacement requests
-   *        content:
-   *          application/json:
-   *            schema:
-   *              type: array
-   *              items:
+   *    get:
+   *      summary: This retrieves all replacement requests from the database
+   *      access: admin only
+   *      responses:
+   *        '200':
+   *          description: A successful response with all items in the inventory
+   *          content:
+   *            application/json:
+   *              schema:
+   *                type: array
+   *                items:
+   *                  type: string
+   *                example:
+   *                  id: 'id'
+   *                  location: '75, Hartley Avenue'
+   *                  description: 'damaged'
+   *                  status: 'pending'
+   *                  user: 'user'
+   *        '403':
+   *          description: An unauthorized request suggesting logged in user does not have corresponding rights
+   *          content:
+   *            application/json:
+   *              schema:
    *                type: string
-   *      '403':
-   *        description: An unauthorized request suggesting logged in user does not have corresponding rights
-   *        content:
-   *          application/json:
-   *            schema:
-   *              type: string
-   *      '500':
-   *          description: Internal Server Error suggesting server maybe experiencing faults 
+   *
    */
   .get(protect, authorize("admin"), getAllReplacement)
   /**
@@ -88,7 +93,7 @@ router
    *        content: 
    *          application/json:
    *            schema:
-   *              $ref: '../models/Replacement'
+   *              $ref: '../models/Replaceent'
    *            example:
    *              status: 'closed'
    *      access: admin only
