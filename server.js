@@ -17,6 +17,8 @@ const connectDB = require("./config/db");
 const users = require("./routes/user");
 const inventory = require("./routes/inventory");
 const request = require("./routes/request");
+const property = require("./routes/property");
+const replacement = require("./routes/replacement");
 
 //Load environment variables
 config({ path: "./config/config.env" });
@@ -77,6 +79,9 @@ app.get("/", (req, res) => {
 app.use("/api/users", users);
 app.use("/api/inventory", inventory);
 app.use("/api/requests", request);
+app.use("/api/property", property);
+app.use("/api/replacement", replacement);
+
 const server = app.listen(PORT, () => {
   console.log(
     `Server is running in ${process.env.NODE_ENV} mode on port ${PORT}`

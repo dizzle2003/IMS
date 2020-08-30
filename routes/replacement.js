@@ -2,15 +2,15 @@ const express = require("express");
 const router = express.Router();
 const { protect, authorize } = require("../middleware/auth");
 const {
-  getAllRequests,
-  createRequest,
+  createReplacement,
+  getAllReplacement,
   updateStatus,
-} = require("../controllers/request");
+} = require("../controllers/replacement");
 
 router
   .route("/")
-  .get(protect, authorize("user"), createRequest)
-  .get(protect, authorize("admin"), getAllRequests)
+  .get(protect, authorize("admin"), getAllReplacement)
+  .post(protect, authorize("user"), createReplacement)
   .put(protect, authorize("admin"), updateStatus);
 
 module.exports = router;
