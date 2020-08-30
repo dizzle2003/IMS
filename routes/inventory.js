@@ -12,31 +12,32 @@ router
   .route("/")
   /**
    * @swagger
-   * /api/inventory:
-   *  get:
-   *    description: This retrieves all inventory from the database
-   *    access: admin only
-   *    responses:
-   *      '200':
-   *        description: A successful response with all items in the inventory
-   *        content:
-   *          application/json:
-   *            schema:
-   *              type: array
-   *              items:
+   * paths:
+   *  /api/inventory:
+   *    get:
+   *      description: This retrieves all inventory from the database
+   *      access: admin only
+   *      responses:
+   *        '200':
+   *          description: A successful response with all items in the inventory
+   *          content:
+   *            application/json:
+   *              schema:
+   *                type: array
+   *                items:
+   *                  type: string
+   *                example:
+   *                  id: 'id'
+   *                  item: 'Chair'
+   *                  state: 'Available'
+   *                  material: 'Wood'
+   *        '403':
+   *          description: An unauthorized request suggesting logged in user does not have corresponding rights
+   *          content:
+   *            application/json:
+   *              schema:
    *                type: string
-   *              example:
-   *                id: 'id'
-   *                item: 'Chair'
-   *                state: 'Available'
-   *                material: 'Wood'    
-   *      '403':
-   *        description: An unauthorized request suggesting logged in user does not have corresponding rights
-   *        content:
-   *          application/json:
-   *            schema:
-   *              type: string
-   *    
+   *
    */
   .get(protect, authorize("admin"), getAllInventory)
 
@@ -48,10 +49,10 @@ router
    *    requestBody:
    *      description: JSON body to be passed to the endpoint
    *      required: true
-   *      content: 
+   *      content:
    *        application/json:
    *          schema:
-   *            $ref: '../models/inventory'
+   *            $ref: '../models/Inventory'
    *          example:
    *            item: 'Chair'
    *            state: 'Available'
@@ -75,7 +76,7 @@ router
    *      requestBody:
    *        description: JSON body to be passed to the endpoint
    *        required: true
-   *        content: 
+   *        content:
    *          application/json:
    *            schema:
    *              $ref: '../models/Inventory'
@@ -108,7 +109,7 @@ router
    *      requestBody:
    *        description: JSON body to be passed to the endpoint
    *        required: true
-   *        content: 
+   *        content:
    *          application/json:
    *            schema:
    *              $ref: '../models/Inventory'
@@ -131,6 +132,6 @@ router
    *      id:
    *        type; string
    */
-  .delete(protect, authorize("admin"), deleteInventoryItem)
+  .delete(protect, authorize("admin"), deleteInventoryItem);
 
 module.exports = router;
