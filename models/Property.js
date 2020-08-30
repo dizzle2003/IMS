@@ -5,10 +5,12 @@ const PropertySchema = new Schema({
   property: {
     type: [String],
     enum: ["Apartment", "Duplex", "Bungalow"],
+    required: true
   },
-  property_kind: {
+  kind: {
     type: [String],
-    enum: ["2", "3", "4"],
+    enum: ["2br", "3br", "4br"],
+    required: true
   },
   position: {
     type: [String],
@@ -24,5 +26,12 @@ const PropertySchema = new Schema({
     default: "no-photo.jpg",
   },
 });
+
+//Hide Position from being returned in Property Object
+PropertySchema.methods.toJSON = function() {
+    const obj = this.toObject();
+    delete obj.position;
+    return obj;
+  }
 
 module.exports = mongoose.model("Property", PropertySchema);

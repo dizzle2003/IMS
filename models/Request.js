@@ -13,10 +13,6 @@ const RequestSchema = new Schema({
     type: String,
     minlength: 10,
   },
-  property: {
-    type: [String],
-    enum: ["Apartment", "Duplex", "Bungalow"],
-  },
   visitation_time: {
     type: Date,
     default: Date.now,
