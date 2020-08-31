@@ -92,7 +92,7 @@ router
    *      access: user only
    *      responses:
    *        '201':
-   *          description: A successful response with the created item
+   *          description: A successful response with the updated item
    *        '403':
    *          description: An unauthorized request suggesting logged in user does not have corresponding rights
    *        '500':
