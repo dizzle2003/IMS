@@ -76,7 +76,7 @@ exports.updateInventoryItem = async (req, res) => {
 @access = private (admin only)
 */
 exports.deleteInventoryItem = async (req, res) => {
-  const { id } = req.parms;
+  const { id } = req.params;
   try {
     const item = await Inventory.findByIdAndDelete(id);
     res.status(200).json({
