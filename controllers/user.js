@@ -10,7 +10,7 @@ const User = require("../models/User");
 
 exports.login = async (req, res) => {
   const { email, password } = req.body;
-  //Valideate email and password
+  //Validate email and password
   if (!email || !password) {
     return res.status(400).json({
       success: false,
@@ -53,8 +53,9 @@ const sendTokenResponse = (res, statusCode, user) => {
 
   res
     .status(statusCode)
-    .cookie('token', token, options)
-    .json({ login: "successful", token, user });
+    .cookie("token", token, options)
+    // @ts-ignore
+    .json({ login: "successful", token, user});
 };
 
 /*
@@ -86,12 +87,18 @@ exports.getUsers = async (req, res) => {
 */
 
 exports.logout = async (req, res) => {
-  res.cookie('token', 'none', {
-    expires: new Date(Date.now() + 5 * 1000),
-    httpOnly: true
-  })
-  res.status(200).json({
-    success: true,
-    data: {}
-  })
+  try {
+    res.cookie('token', 'none', {
+      expires: new Date(Date.now() + 5 * 1000),
+      httpOnly: true
+    })
+    res.status(200).json({
+      success: true,
+      data: {}
+    })
+  } catch (err) {
+    res.status(400).json({
+      err
+    })
+  }
 };

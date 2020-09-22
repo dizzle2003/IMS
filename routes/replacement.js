@@ -1,21 +1,20 @@
 const express = require("express");
-const {
-  getAllInventory,
-  createInventoryItem,
-  updateInventoryItem,
-  deleteInventoryItem,
-} = require("../controllers/inventory");
 const router = express.Router();
 const { protect, authorize } = require("../middleware/auth");
+const {
+  createReplacement,
+  getAllReplacement,
+  updateStatus,
+} = require("../controllers/replacement");
 
 router
   .route("/")
-  /**
+ /**
    * @swagger
    * paths:
-   *  /api/inventory:
+   *  /api/replacement:
    *    get:
-   *      summary: This retrieves all inventory from the database
+   *      summary: This retrieves all replacement requests from the database
    *      access: admin only
    *      responses:
    *        '200':
@@ -28,9 +27,10 @@ router
    *                  type: string
    *                example:
    *                  id: 'id'
-   *                  item: 'Chair'
-   *                  state: 'Available'
-   *                  material: 'Wood'
+   *                  location: '75, Hartley Avenue'
+   *                  description: 'damaged'
+   *                  status: 'pending'
+   *                  user: 'user'
    *        '403':
    *          description: An unauthorized request suggesting logged in user does not have corresponding rights
    *          content:
@@ -39,53 +39,67 @@ router
    *                type: string
    *
    */
-  .get(protect, authorize("admin"), getAllInventory)
-
+  .get(protect, authorize("admin"), getAllReplacement)
   /**
    * @swagger
-   * /api/inventory:
-   *  post:
-   *    summary: This creates an item in the inventory
-   *    requestBody:
-   *      description: JSON body to be passed to the endpoint
-   *      required: true
-   *      content:
-   *        application/json:
-   *          schema:
-   *            $ref: '#/models/Inventory'
-   *          example:
-   *            item: 'Chair'
-   *            state: 'Available'
-   *            material: 'Wood'
-   *    access: admin only
-   *    responses:
-   *      '201':
-   *        description: A successful response with the created item
-   *      '403':
-   *        description: An unauthorized request suggesting logged in user does not have corresponding rights
-   *      '500':
-   *        description: Internal Server Error suggesting server maybe experiencing faults
+   * paths:
+   *  /api/replacement:
+   *    post:
+   *      summary: This allows a user to create a replacement request on the application
+   *      requestBody:
+   *        description: JSON body to be passed to the endpoint
+   *        required: true
+   *        content: 
+   *          application/json:
+   *            schema:
+   *              $ref: '../models/replacement'
+   *            example:
+   *              location: '75, Hartley Avenue'
+   *              photo: 'ajax.jpg'
+   *              description: 'Broken and needs to be replaced'
+   *              status: 'pending'
+   *      access: user only
+   *      responses:
+   *        '201':
+   *          description: A successful response with the created item
+   *        '403':
+   *          description: An unauthorized request suggesting logged in user does not have corresponding rights
+   *        '500':
+   *          description: Internal Server Error suggesting server maybe experiencing faults
+   * definitions:
+   *  Property:
+   *    type: object
+   *    required:
+   *      - location
+   *      - description
+   *    properties:
+   *      location:
+   *        type: string
+   *      description:
+   *        type: string
+   *      photo:
+   *        type: string
    */
-  .post(protect, authorize("admin"), createInventoryItem)
+  .post(protect, authorize("user"), createReplacement)
   /**
    * @swagger
    * paths:
    *  /api/replacement:
    *    put:
-   *      summary: This allows an admin to update the status of items in the inventory
+   *      summary: This allows an admin to update the status of a replacement request on the application
    *      requestBody:
    *        description: JSON body to be passed to the endpoint
    *        required: true
-   *        content:
+   *        content: 
    *          application/json:
    *            schema:
-   *              $ref: '#/models/Inventory'
+   *              $ref: '../models/Replaceent'
    *            example:
    *              status: 'closed'
    *      access: admin only
    *      responses:
    *        '201':
-   *          description: A successful response with the updated Inventory Item
+   *          description: A successful response with the updated request status
    *        '403':
    *          description: An unauthorized request suggesting logged in user does not have corresponding rights
    *        '500':
@@ -99,39 +113,6 @@ router
    *      status:
    *        type; string
    */
-  .put(protect, authorize("admin"), updateInventoryItem)
-  /**
-   * @swagger
-   * paths:
-   *  /api/inventory:
-   *    delete:
-   *      summary: This allows an admin to delete an inventory item
-   *      requestBody:
-   *        description: JSON body to be passed to the endpoint
-   *        required: true
-   *        content:
-   *          application/json:
-   *            schema:
-   *              $ref: '#/models/Inventory'
-   *            example:
-   *              id: 5f30948610064f4a000b7139
-   *      access: admin only
-   *      responses:
-   *        '201':
-   *          description: A successful response with the corresponding message
-   *        '403':
-   *          description: An unauthorized request suggesting logged in user does not have corresponding rights
-   *        '500':
-   *          description: Internal Server Error suggesting server maybe experiencing faults
-   * definitions:
-   *  Request:
-   *    type: object
-   *    required:
-   *      - id
-   *    properties:
-   *      id:
-   *        type; string
-   */
-  .delete(protect, authorize("admin"), deleteInventoryItem);
+  .put(protect, authorize("admin"), updateStatus);
 
 module.exports = router;

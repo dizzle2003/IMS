@@ -41,3 +41,50 @@ exports.createInventoryItem = async (req, res) => {
     });
   }
 };
+
+/*
+@desc = Update an inventory item in the database
+@route = '/api/inventory'
+@parameters = id
+@access = private (admin only)
+*/
+exports.updateInventoryItem = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const inventory = await Inventory.findByIdAndUpdate(id, req.body, {
+      new: true,
+      runValidators: true,
+    });
+
+    res.status(302).json({
+      updated: true,
+      msg: `${inventory} with id ${id} has been updated`,
+      data: inventory,
+    });
+  } catch (err) {
+    res.status(400).json({
+      updated: false,
+      err,
+    });
+  }
+};
+
+/*
+@desc = Delete an inventory item in the database
+@route = '/api/inventory'
+@parameters = id
+@access = private (admin only)
+*/
+exports.deleteInventoryItem = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const item = await Inventory.findByIdAndDelete(id);
+    res.status(200).json({
+      msg: `item with ${id} has been deleted`,
+    });
+  } catch (err) {
+    res.status(400).json({
+      err,
+    });
+  }
+};
