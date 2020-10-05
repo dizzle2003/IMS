@@ -75,6 +75,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 
+//Application APIs
 app.use("/api/users", users);
 app.use("/api/inventory", inventory);
 app.use("/api/requests", request);
