@@ -1,6 +1,7 @@
 node_modules/
 config/config.env
+config/.DS_Store
 .vscode/
-.DS_Store
+.DS_Store/
 
 
