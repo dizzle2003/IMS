@@ -25,7 +25,7 @@ exports.protect = async (req, res, next) => {
   try {
     //Verify if token exists
     var decoded = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(decoded);
+    // console.log(decoded);
     
     
     

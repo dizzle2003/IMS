@@ -75,6 +75,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"));
 });
 
+//test API
+app.get('/test', (req, res) => {
+  res.status(200).json({
+    message: "test works"
+  })
+});
+
 //Application APIs
 app.use("/api/users", users);
 app.use("/api/inventory", inventory);
