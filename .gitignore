@@ -6,6 +6,6 @@ config/.DS_Store
 
 
 
-
+test/
 fetch-test.js
 playground.js
