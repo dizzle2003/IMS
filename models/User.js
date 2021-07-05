@@ -44,7 +44,7 @@ UserSchema.pre("save", async function (next) {
 });
 
 //Generating web token
-UserSchema.methods.getSignedJwtToken = function () {
+UserSchema.methods.getSignedJwtToken = () => {
   return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRES,
   });
