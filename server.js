@@ -11,5 +11,5 @@ server.listen(PORT, () => {
 //Handle unhandled promise rejections
 process.on("unhandledRejection", (err) => {
   console.log(`Error: ${err}`);
-  server.close(() => process.exit(1));
+  // process.exit(1);
 });
